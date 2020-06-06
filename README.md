@@ -1,2 +1,6 @@
 # VideoHub pro
- a LAN video server
+ A LAN video server
+
+## Usage
+
+### __Write the absolute directory of videos u want serve in the sourceDir__

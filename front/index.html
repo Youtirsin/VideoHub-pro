@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VideoHub Pro</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/vue.min.js"></script>
+    <script src="js/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div id="app"> 
+            <nav>
+                <ul class="pagination">
+                    <li class="page-item" @click="window.history.back()"><a class="page-link" href="#">Back</a></li>
+                    <li class="page-item" @click="window.history.forward()"><a class="page-link" href="#">Forward</a></li>
+                </ul>
+            </nav>
+            <div class="list-group" id="videolist">
+                <button class="list-group-item list-group-item-action" v-for='video in videos' v-text='video'
+                    @click='go(video)'></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
